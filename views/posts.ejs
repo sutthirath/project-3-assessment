@@ -1,0 +1,18 @@
+<%- include ./partials/header.ejs %>
+
+<h1>ALL POSTS</h1>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <% posts.forEach(function(post) { %> 
+        <tr>
+            <td> <%= post.title %> </td> 
+            <td> <%= post.body %> </td>
+        </tr>
+    <% }) %>
+</table>
+
+<%- include ./partials/footer.ejs %>  
